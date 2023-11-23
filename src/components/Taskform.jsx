@@ -7,6 +7,10 @@ export default function Taskform({ tareas, setTareas }) {
   const [valor, setValor] = useState("");
 
   const agregaTarea = (uvalor) => {
+    if (uvalor == "") {
+      alert("Debe Completar Motivo");
+      return;
+    }
     //BUSCA ULTIMA TAREA PARA AGREGAR EL SIGUIENTE
     let ultimo = Date.now();
     //CREA NUEVA TAREA
@@ -27,11 +31,11 @@ export default function Taskform({ tareas, setTareas }) {
   };
   return (
     <div className="row justify-content-md-center">
-      <div className="card text-bg-secondary mb-6 col-8">
+      <div className="card text-bg-secondary mb-3 col-8">
         <div className="card-body">
           <h5 className="card-title">Nueva Tarea</h5>
 
-          <div className="mb-3">
+          <div className="mb-0">
             {/* <label className="form-label">Motivo</label> */}
             <input
               type="text"
@@ -43,7 +47,8 @@ export default function Taskform({ tareas, setTareas }) {
             />
           </div>
           <div className="botones">
-            <div className="mb-3">
+            <div className="mb-0">
+            
               <button
                 type="button"
                 id="boton"
@@ -52,15 +57,14 @@ export default function Taskform({ tareas, setTareas }) {
               >
                 <FontAwesomeIcon icon={faPlus} /> Agregar
               </button>
-              {/* <div className="burrito-container"> */}
-              <div>
-                <img
+              <img
                   src="../src/assets/GigDonkey.jpg"
                   class="image"
                   alt="burrito"
-                  
                 ></img>
-              </div>
+              
+                
+              
             </div>
           </div>
         </div>

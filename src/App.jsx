@@ -22,19 +22,18 @@ return (
     <>
       <div className="container">
         <h1 className="palabra" >Agenda</h1>
-        
-        <div className="row">
-            <Tasklist 
-            tareas={tareas}
-            setTareas={setTareas} 
-            />
-            </div>
         <div className="row">
             <Taskform
             tareas={tareas}
             setTareas={setTareas} 
             />
         </div>
+        <div className="row">
+            <Tasklist 
+            tareas={tareas}
+            setTareas={setTareas} 
+            />
+            </div>
       </div>
     </>
   )

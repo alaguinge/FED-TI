@@ -1,45 +1,46 @@
 .btn {
     background-color: rgb(17, 12, 82);
-    border-radius: 50%;
+    border-radius: 10 15 10 10;
     font-family:'Arial Narrow', Arial, sans-serif;
     font-size: 1.3vw;
     margin-left: 3vw;
 }
 
 .card-title{
-    font-size: 1.5vw;
-    text-align: left;
+    font-size: 1.8vw;
+    text-align: right;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: black;
 }
 
 
 .burrito-container {
-    width: 4vw;
-    height: 4vw;
-    position: absolute;
+    width: 2vw;
+    height: 2vw;
     overflow: hidden; 
-    margin-bottom: 0.5vw;
-    margin-left: 0vw;
-    padding: 0.5vw;
+    margin-bottom: 0.2vw;
+    
+  
 }
 
 .botones{
-  display: inline-flex;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
   
 
   }
 
   .image {
-    align-items: right;
-    width: 10%;
-    height: 10%;
+    
+    width: 7%;
+    height: 7%;
     object-fit: cover;
     transform: rotate(0deg);
     transition: transform 2s ease-in-out;
     border-radius: 75%;
-
-    border-color: #960f1a;
+    border-color: #0a0a0a;
+    padding:0.2vw;
 
   }
   .burrito-container:hover .image {
